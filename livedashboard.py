@@ -30,7 +30,7 @@ class Main(tk.Tk):
         if len(sys.argv) > 1 and sys.argv[1] == "local":
             ip = '127.0.1.1'
         else:
-            ip = '10.51.90.2'
+            ip = '10.51.19.2'
 
         Dashboard(parent=self, ip=ip).pack(side=tk.TOP)
 
@@ -101,7 +101,7 @@ class Dashboard(tk.Frame):
 
         # Title Display
         field_plot.text(
-            0, 27.7, 'FRC 5190 Live Dashboard', fontproperties=kanit_italic, size=20, color='#690a0f')
+            0, 27.7, 'Live Dashboard (by 5190)', fontproperties=kanit_italic, size=20, color='#690a0f')
 
         # IP Display
         field_plot.text(17, 27.7, ip, fontproperties=kanit_italic, size=10, color="#303030", alpha=0.5)
